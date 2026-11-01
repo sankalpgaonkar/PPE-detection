@@ -1,6 +1,6 @@
 # 🦺 Personal Protective Equipment (PPE) Detection System
 
-[![Live Demo](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://ppe-web-app.streamlit.app/)
+[![Live Demo](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://sanppedetection.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)](https://github.com/ultralytics/ultralytics)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
@@ -13,7 +13,7 @@ An end-to-end computer vision solution engineered for real-time Personal Protect
 ## 🌐 Live Web Application
 
 Experience the live app in action directly in your browser:
-👉 **[PPE Detector Web App on Streamlit Cloud](https://ppe-web-app.streamlit.app/)**
+👉 **[PPE Detector Web App on Streamlit Cloud](https://sanppedetection.streamlit.app/)**
 
 ![PPE Detection Interface](https://github.com/user-attachments/assets/d849947c-4299-49e2-933b-9bd0a308a1d9)
 
@@ -154,7 +154,7 @@ Once running, navigate to `http://localhost:8501` in your browser.
 
 Developed by **Sankalp Gaonkar**  
 - **GitHub**: [@sankalpgaonkar](https://github.com/sankalpgaonkar)
-- **Live Application**: [PPE Detection App](https://ppe-web-app.streamlit.app/)
+- **Live Application**: [PPE Detection App](https://sanppedetection.streamlit.app/)
 
 ---
 

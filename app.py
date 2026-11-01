@@ -288,6 +288,14 @@ st.html("""
 <style>
   [data-testid="stHeader"]    { visibility:hidden; height:0; min-height:0; }
   [data-testid="stToolbar"]   { visibility:hidden; }
+  #MainMenu                   { visibility:hidden; }
+  footer                      { visibility:hidden; height:0; min-height:0; }
+  [data-testid="stStatusWidget"] { visibility:hidden; }
+  [data-testid="stDecoration"]   { display:none; }
+  .viewerBadge_container__1QSob,
+  .viewerBadge_link__1S137,
+  [class*="viewerBadge_container"],
+  [data-testid="manage-app-button"] { display:none !important; }
   .block-container             { padding-top:0.6rem !important;
                                  padding-bottom:0 !important;
                                  max-width:100% !important; }
@@ -302,8 +310,27 @@ st.html("""
 # SIDEBAR
 # ─────────────────────────────────────────
 st.sidebar.markdown(f"## {logo_html_small} PPE Monitor", unsafe_allow_html=True)
+st.sidebar.markdown(
+    """
+    <div style="margin-bottom: 12px; padding: 6px 10px; background: rgba(255,255,255,0.05); border-radius: 6px; border: 1px solid rgba(128,128,128,0.2); font-size: 0.8em; color: #888;">
+        Hosted by <b style="color: #2ECC71;">Sankalp Gaonkar</b>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 input_type = st.sidebar.radio("Source", ["Image", "Video", "Webcam"], label_visibility="collapsed")
 model = load_model()
+
+st.sidebar.markdown("---")
+st.sidebar.markdown(
+    """
+    <div style="font-size:0.75em;color:#888;text-align:center;line-height:1.4;">
+      PPE Safety Monitor<br>
+      Hosted by <b><a href="https://github.com/sankalpgaonkar" target="_blank" style="color:#2ECC71;text-decoration:none;">Sankalp Gaonkar</a></b>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 
 # ─────────────────────────────────────────
@@ -312,11 +339,16 @@ model = load_model()
 # ─────────────────────────────────────────
 
 st.html(f"""
-<div style="display:flex;align-items:center;gap:15px;margin-bottom:15px;">
-  {logo_html}
-  <div>
-    <div style="font-size:1.35em;font-weight:700;line-height:1.2;">PPE Safety Detection Dashboard</div>
-    <div style="font-size:0.8em;color:#888;">Real-time Personal Protective Equipment monitoring</div>
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px;margin-bottom:15px;">
+  <div style="display:flex;align-items:center;gap:15px;">
+    {logo_html}
+    <div>
+      <div style="font-size:1.35em;font-weight:700;line-height:1.2;">PPE Safety Detection Dashboard</div>
+      <div style="font-size:0.8em;color:#888;">Real-time Personal Protective Equipment monitoring</div>
+    </div>
+  </div>
+  <div style="font-size:0.85em;color:#aaa;background:rgba(255,255,255,0.06);padding:6px 12px;border-radius:8px;border:1px solid rgba(128,128,128,0.2);">
+    Hosted by <b style="color:#2ECC71;">Sankalp Gaonkar</b>
   </div>
 </div>
 """)
